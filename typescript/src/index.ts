@@ -1,5 +1,5 @@
 import fs from "fs";
-import { day1 } from "./Puzzles/index.js";
+import { Trebuchet, cubeConundrum } from "./Puzzles/index.js";
 
 enum Data {
   Example,
@@ -8,12 +8,18 @@ enum Data {
 const dataUsed = Data.Example;
 const day: number = 1;
 const dataPath = "./src/data/";
+let data;
 
 switch (day) {
   case 1:
-    const data = fs.readFileSync(`${dataPath}/Day1/real.txt`, {
+    data = fs.readFileSync(`${dataPath}/Day1/real.txt`, {
       encoding: "utf-8",
     });
-    day1(data);
+    Trebuchet(data);
     break;
+  case 2:
+    data = fs.readFileSync(`${dataPath}/Day2/example_part_1.txt`, {
+      encoding: "utf-8",
+    });
+    cubeConundrum(data);
 }
