@@ -6,7 +6,7 @@ enum Data {
   Real,
 }
 const dataUsed = Data.Example;
-const day: number = 1;
+const day: number = 2;
 const dataPath = "./src/data/";
 let data;
 
@@ -18,7 +18,7 @@ switch (day) {
     Trebuchet(data);
     break;
   case 2:
-    data = fs.readFileSync(`${dataPath}/Day2/example_part_1.txt`, {
+    data = fs.readFileSync(`${dataPath}/Day2/real.txt`, {
       encoding: "utf-8",
     });
     cubeConundrum(data);
