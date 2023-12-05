@@ -1,4 +1,4 @@
-import Trebuchet from "./Day1/day1.js";
+import trebuchet from "./Day1/day1.js";
 import cubeConundrum from "./Day2/cubeConundrum.js";
-
-export { Trebuchet, cubeConundrum };
+import gearRations from "./Day3/GearRatios.js";
+export { trebuchet, cubeConundrum, gearRations };
